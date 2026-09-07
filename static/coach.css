@@ -1,0 +1,153 @@
+.coach-banner {
+  margin: 18px 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface, #f3f6ef);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.coach-banner h3 {
+  margin: 8px 0;
+}
+.coach-banner p {
+  max-width: 650px;
+  margin: 6px 0;
+  line-height: 1.6;
+}
+.coach-banner > div:last-child {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.coach-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 0 16px;
+}
+.coach-tabs button {
+  white-space: nowrap;
+}
+.coach-content {
+  display: grid;
+  gap: 16px;
+}
+.coach-content p {
+  line-height: 1.65;
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+.coach-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+.coach-card h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+.coach-card button,
+.coach-plan button {
+  margin: 5px 5px 0 0;
+}
+.coach-feedback {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.coach-feedback button {
+  font-size: 12px;
+}
+.coach-toolbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.coach-plan {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.coach-days {
+  display: flex;
+  gap: 6px;
+  margin: 14px 0;
+}
+.coach-days span {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 12px;
+}
+.coach-days .done {
+  background: #285a48;
+  color: white;
+}
+.coach-stats {
+  display: flex;
+  gap: 24px;
+}
+.coach-stats b {
+  display: block;
+  font-size: 28px;
+}
+.coach-stats span {
+  font-size: 12px;
+}
+.coach-chat {
+  display: grid;
+  gap: 12px;
+}
+.coach-chat article {
+  padding: 16px;
+  background: var(--surface, #f2f5ef);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.coach-food-filter {
+  display: flex !important;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0 !important;
+}
+.coach-content input[type="checkbox"],
+.coach-food-filter input {
+  width: auto !important;
+}
+.coach-content select {
+  width: 100%;
+  margin-top: 8px;
+}
+.coach-content details summary {
+  cursor: pointer;
+  padding: 6px 0;
+}
+.dark .coach-banner,
+.dark .coach-chat article {
+  background: #24352e;
+}
+@media (max-width: 600px) {
+  .coach-banner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px;
+  }
+  .coach-banner > div:last-child {
+    flex-wrap: wrap;
+  }
+  .coach-card {
+    padding: 14px;
+  }
+  .coach-stats {
+    gap: 15px;
+  }
+  .coach-tabs {
+    max-width: 100%;
+  }
+}

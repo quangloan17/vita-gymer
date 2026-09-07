@@ -1,0 +1,89 @@
+.smart-panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px;
+  margin: 20px 0 24px;
+}
+.smart-command {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.smart-command h2 {
+  margin: 6px 0;
+}
+.smart-command p {
+  font-size: 12px;
+  color: var(--muted);
+}
+.habit-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.habit-actions .chip {
+  white-space: normal;
+  text-align: left;
+  max-width: 100%;
+}
+.report-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+.report-grid .stat-tile b {
+  font-size: 22px;
+}
+.report-grid .stat-tile p {
+  font-size: 11px;
+  margin-top: 10px;
+  color: var(--muted);
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--text);
+  padding: 14px;
+  font: inherit;
+  min-height: 110px;
+}
+#toast.show {
+  pointer-events: auto;
+}
+#toast button {
+  margin-left: 14px;
+  text-decoration: underline;
+  min-height: 44px;
+  font-weight: 600;
+}
+#smart-preview {
+  margin-top: 15px;
+}
+.smart-command .primary {
+  flex-shrink: 0;
+}
+@media (max-width: 640px) {
+  .smart-command {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .smart-panel {
+    padding: 16px;
+  }
+  .habit-actions .chip {
+    font-size: 11px;
+  }
+  .report-grid {
+    grid-template-columns: 1fr;
+  }
+  .smart-command h2 {
+    font-size: 18px;
+  }
+}
